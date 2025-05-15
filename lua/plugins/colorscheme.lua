@@ -44,13 +44,29 @@ return {
 
   -- { "rose-pine/neovim", name = "rose-pine" },
 
+  -- Cyberdream colorscheme
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("cyberdream").setup({
+        transparent = false,
+        italic_comments = true,
+        hide_fillchars = true,
+        borderless_telescope = true,
+      })
+    end,
+  },
+
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "catppuccin-frappe",
       -- colorscheme = "rose-pine-moon",
-      colorscheme = "tokyonight",
+      -- colorscheme = "tokyonight",
+      colorscheme = "cyberdream",
     },
   },
   -- {
