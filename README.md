@@ -41,3 +41,5 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
   ```sh
   git clone https://github.com/rafa-thayto/lazy-thayto-vim $env:LOCALAPPDATA\nvim
   ```
+
+## ⌛ Last Update: May 15, 2025
