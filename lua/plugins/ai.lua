@@ -6,12 +6,15 @@ return {
     opts = {
       -- add any opts here
       -- for example
-      provider = "claude",
-      claude = {
-        endpoint = "https://api.anthropic.com",
-        model = "claude-3-5-sonnet-20241022",
-        temperature = 0,
-        max_tokens = 4096,
+      provider = "gemini",
+      providers = {
+        gemini = {
+          model = "gemini-2.5-pro",
+          api_key = os.getenv("GEMINI_API_KEY"),
+          extra_request_body = {
+            temperature = 0.7,
+          },
+        },
       },
       -- openai = {
       --   endpoint = "https://api.openai.com/v1",
@@ -31,11 +34,11 @@ return {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
       --- The below dependencies are optional,
-      "echasnovski/mini.pick", -- for file_selector provider mini.pick
+      "nvim-mini/mini.pick", -- for file_selector provider mini.pick
       "nvim-telescope/telescope.nvim", -- for file_selector provider telescope
       "hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
       "ibhagwan/fzf-lua", -- for file_selector provider fzf
-      "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
+      "nvim-tree/nvim-web-devicons", -- or nvim-mini/mini.icons
       "zbirenbaum/copilot.lua", -- for providers='copilot'
       {
         -- support for image pasting
