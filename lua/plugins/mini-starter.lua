@@ -23,9 +23,11 @@ return {
       evaluate_single = true,
       header = logo,
       items = {
-        new_section("Pind file",           "Telescope find_files", "Telescope"),
+        new_section("Find file",           "Telescope find_files", "Telescope"),
         new_section("Recent files",        "Telescope oldfiles",   "Telescope"),
         new_section("Grep text",           "Telescope live_grep",  "Telescope"),
+        new_section("Git files",           "Telescope git_files",  "Git"),
+        new_section("Just My Code",        "Telescope live_grep",  "Telescope"),
         new_section("init.lua",            "e $MYVIMRC",           "Config"),
         new_section("Lazy",                "Lazy",                 "Config"),
         new_section("-Explorer",           "ex .",                 "Oil"),
