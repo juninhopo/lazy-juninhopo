@@ -10,5 +10,3 @@ vim.opt.guifont = "VictorMono Nerd Font:h12"
 -- Fallback para ícones (caso necessário)
 -- vim.opt.guifontwide = "Symbols Nerd Font Mono:h12"
 
--- Configuração para ativar o suporte ao clipboard
-vim.opt.clipboard = "unnamedplus"
