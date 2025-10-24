@@ -4,4 +4,5 @@ vim.filetype.add({
     mdx = "mdx",
   },
 })
+
 require("config.lazy")
