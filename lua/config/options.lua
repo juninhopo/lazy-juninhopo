@@ -7,6 +7,9 @@ vim.g.snacks_animate = false
 -- Para GUI (Neovide, Neovim-Qt, etc.)
 vim.opt.guifont = "VictorMono Nerd Font:h12"
 
+vim.wo.number = true
+vim.wo.relativenumber = false
+
 -- Fallback para ícones (caso necessário)
 -- vim.opt.guifontwide = "Symbols Nerd Font Mono:h12"
 
